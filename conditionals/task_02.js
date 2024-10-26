@@ -1,17 +1,14 @@
-const input = require ("prompt-sync")();
-// Password Validation
-let password;
-let max = 8;
-password = input("Enter Password: ")
+// Task: Check if number is Even or Odd
+// User enter a number , and print wether the number is even or odd
 
-//check password length
+const input = require("prompt-sync")();
 
-if (password.length < max) {
-    console.log("Password is too short!");
+let number = parseInt(input("Enter any Number: "));
+
+// check number
+if (number % 2 === 0 ) {
+    console.log("The number", number , "is even");
 }
-else if (password.length > max){
-    console.log(password, "is verified");
-}
-else{
-    console.log("try again");
+else {
+    console.log( number , " is  old number");
 }
